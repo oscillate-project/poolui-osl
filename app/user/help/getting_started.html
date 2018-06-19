@@ -1,0 +1,92 @@
+<div layout="row" flex>
+	<div layout="column" flex>
+		<md-card>
+			<md-toolbar class="md-table-toolbar md-default">
+				<div class="md-toolbar-tools">
+					<span class="md-title">Getting Started with {{GLOBALS.pool_name}}</span>
+				</div>
+			</md-toolbar>
+			<md-card-content>
+				<p class="panel-subtitle">Welcome to ArQmA.com! If you are new to mining, this is the place for you.</p>
+				<p>The owner of this pool is <strong>ArqTras & Michal VEL M@LBIT</strong>. If your miner gets banned, your payout is late, your connetion is lost - they are the one you want to ask for help. For urgent matters you can mail him at <a href="mailto: support@supportaeon.com">support@supportAEON.com</a></p>
+				<p>The pool has also quite stable and knowlegable <strong>community</strong> - you can join the <a href="https://supportaeon.chatango.com/" target="_new" style="text-decoration: underline; font-weight: bold;">chat</a> and seek the answers there :)</p>
+			</md-card-content>
+		</md-card>
+		<md-card>
+			<md-toolbar class="md-table-toolbar md-default">
+				<div class="md-toolbar-tools">
+					<span class="md-title">If you don't have a wallet create one</span>
+				</div>
+			</md-toolbar>
+			<md-card-content>
+<!--<p class="panel-subtitle"> ARQMA does not have an official safe to use online wallet. We highly recommend you download the <a href="https://github.com/aeonix/aeon/releases" target="_new">official released software from the AEON developers.</a></p>												<p><a href="https://poolele.com/download/aeon-wallet-gui-v1-0-2-6-windows-installer/?wpdmdl=3955" target="_blank">AEON GUI Wallet </a>: The safest way to store and secure your AEON, although it would be your responsibility to keep your AEON safe.</p> -->
+			</md-card-content>
+		</md-card>
+		<md-card>
+			<md-toolbar class="md-table-toolbar md-default">
+			  <div class="md-toolbar-tools">
+			    <span class="md-title">Pick a miner for cpu, gpu or both</span>
+			  </div>
+			</md-toolbar>
+			<md-card-content>
+				<p class="panel-subtitle">You can choose from variety of miners.</p>
+				<p>All are nice pieces of software and you should try what suits you best. Most common are <a href="https://github.com/fireice-uk/xmr-stak/releases" target="_new" style="text-decoration: underline">xmr-stak</a>,
+<a href="https://github.com/xmrig/xmrig/releases" target="_new" style="text-decoration: underline">xmrig</a>
+ <a href="https://github.com/KlausT/ccminer-cryptonight/releases" target="_new" style="text-decoration: underline;">ccminer-cryptonight</a>.</p>
+<p>For managment many rigs we are recommend <a href="https://github.com/Bendr0id/xmrigCC" target="_new" style="text-decoration: underline">xmrigCC</a>
+				<p><h3>More info soon.</h3></p>
+			</md-card-content>
+		</md-card>
+				<md-card>
+			<md-toolbar class="md-table-toolbar md-default">
+			  <div class="md-toolbar-tools">
+			    <span class="md-title">Pick a mining server and port</span>
+			  </div>
+			</md-toolbar>
+			<md-card-content>
+				<p class="panel-subtitle">Currently there is only one port type and it's PPLNS. It	helps to combat pool hopping and ensures a good payout for miners.</p>
+				<p>For pool's url use <code> pool.arqma.com </code></p><p>The Port is used in conjunciton with the url and is used to specify the starting difficulty. You should select this depending on the total #ing power of your rig (see port descriptions). Examples below.</p>
+				<div flex layout="row">
+					<div flex></div>
+					<md-button ng-click="viewPorts($event)">View Ports list</md-button>
+					<div flex></div>
+				</div>
+			</md-card-content>
+		</md-card>
+		<md-card>
+			<md-toolbar class="md-table-toolbar md-default">
+				<div class="md-toolbar-tools">
+					<span class="md-title">The moment</span>
+				</div>
+			</md-toolbar>
+			<md-card-content>
+				<p class="panel-subtitle">By now you should have a wallet, mining software, pool url and port. It's time to put them together.</p>
+			
+			
+				<p>Here are some examples of the parameters that you need to pass on to your miner software, the format matters so be careful.</p>
+				<p>Depending on your miner you need to add the required parameters via command line or config.txt</p>
+				<p>Required fields are payment <b>address</b> and <b>MinerIdentifier</b></p>
+				<blockquote>
+					<i>Username format</i> : address.paymentID+FixedDifficulty<br/>
+					<i>Password Format</i> : MinerIdentifier:Email<br/>
+				</blockquote>
+				<md-list flex>
+					<md-subheader class="md-no-sticky">Username / Password Samples</md-subheader>
+					<md-divider></md-divider>
+					<md-list-item class="md-3-line" ng-repeat="sample in samples">
+					  <div class="md-list-item-text" layout="column">
+						<h4>## {{ sample.desc }}</h4>
+						<blockquote>
+							<p><b>{{ sample.type }}</b> : {{ sample.sample }}</p>
+							<small class="md-body-1">(e.g. miner.exe -u <i class="truncate">{{(sample.type=="Username") ? sample.sample : 'paymentAddress'}}</i> -p {{(sample.type=="Password") ? sample.sample : 'worker'}})</small><br/>
+						</blockquote>
+					  </div>
+					  <md-divider></md-divider>
+					</md-list-item>
+				 </md-list>
+			<h3 class="text-center">Happy Mining !</h3>
+			</md-card-content>
+		</md-card>
+		
+	</div>
+</div>
