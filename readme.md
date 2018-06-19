@@ -1,4 +1,4 @@
-# Arqma Pool frontend
+# ArQmA Pool frontend
 
 ### AngularJS based UI for [nodejs-pool](https://github.com/arqma/nodejs-pool-arqma)
 
