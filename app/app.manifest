@@ -25,7 +25,6 @@ admin/ports.js
 admin/workers.html
 admin/workers.js
 assets/ding.wav
-assets/supportXMR.png
 utils/dataservice.js
 utils/directives.js
 utils/services.js

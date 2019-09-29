@@ -1,6 +1,6 @@
-# Nodejs Pool ArQmA Pool UI
+# Nodejs Pool Oscillate Pool UI
 
-### AngularJS based UI for [nodejs-pool](https://github.com/arqma/nodejs-pool-arqma)
+### AngularJS based UI for [nodejs-pool](https://github.com/oscillate-project/nodejs-pool-oscillate)
 
 ### Features
 - See your hashrate on all pages

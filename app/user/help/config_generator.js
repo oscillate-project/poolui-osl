@@ -17,10 +17,10 @@ app.controller('ConfigGeneratorCtrl', function($scope) {
 	$scope.example_attr = {
 		'with_mail': false,
 		'with_worker_id': false,
-    'with_pool_address' : 'pool.arqma.com',
-    'with_custom_wallet': 'aTmusoThH5t7kWACr3nhQGBmEPA1bxKPQD9RVEGyNB6k8E5f9WG1qvteFhvnzW7WA67HBGQfN824LRn2vYgSNq5Q1Jm6nmeV7',
-    'with_custom_worker': 'MyWorker',
-    'with_custom_email': 'me@email.com',
+    'with_pool_address' : 'poolhost.com',
+    'with_custom_wallet': 'TFaTmusoThH5t7kWACr3nhQGBmEPA1bxKPQD9RVEGyNB6k8E5f9WG1qvteFhvnzW7WA67HBGQfN824LRn2vYgSNq5Q1Jm6nmeV7',
+    'with_custom_worker': 'YourWorker',
+    'with_custom_email': 'me@duckmail.com',
     'with_custom_port': '3333',    
 	}
 
